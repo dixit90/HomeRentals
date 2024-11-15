@@ -3,7 +3,7 @@ import "../styles/ListingDetails.scss";
 import { useNavigate, useParams } from "react-router-dom";
 import { facilities } from "../data";
 
-import "react-date-range/dist/styles.css"
+import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { DateRange } from "react-date-range";
 import Loader from "../components/Loader";
@@ -107,7 +107,7 @@ const ListingDetails = () => {
           {listing.listingPhotoPaths?.map((item) => (
             <img
               src={`http://localhost:3001/${item.replace("public", "")}`}
-              alt="listing photo"
+              alt="listing pic"
             />
           ))}
         </div>
@@ -127,7 +127,7 @@ const ListingDetails = () => {
             src={`http://localhost:3001/${listing.creator.profileImagePath.replace(
               "public",
               ""
-            )}`}
+            )}`} alt="profile"
           />
           <h3>
             Hosted by {listing.creator.firstName} {listing.creator.lastName}
