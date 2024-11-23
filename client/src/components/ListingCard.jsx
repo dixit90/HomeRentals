@@ -1,6 +1,5 @@
-import "../styles/ListingCard.scss";
 import { useState } from "react";
-
+import "../styles/ListingCard.scss";
 import {
   ArrowForwardIos,
   ArrowBackIosNew,
